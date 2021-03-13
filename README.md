@@ -1,3 +1,5 @@
+Link to notes-api: https://github.ccs.neu.edu/ricksphuang/RickShunpingHuang-Serverless-NotesAPI
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
