@@ -6,9 +6,10 @@ import Nav from "react-bootstrap/Nav";
 import { LinkContainer } from "react-router-bootstrap";
 import { AppContext } from "./libs/contextLib";
 import { Auth } from "aws-amplify";
+import { useHistory } from "react-router-dom";
 
 function App() {
-
+const history = useHistory();
 const [isAuthenticating, setIsAuthenticating] = useState(true);
 const [isAuthenticated, userHasAuthenticated] = useState(false);
 
@@ -34,6 +35,8 @@ async function handleLogout() {
   await Auth.signOut();
 
   userHasAuthenticated(false);
+
+  history.push("/login");
 }
 
 return (
