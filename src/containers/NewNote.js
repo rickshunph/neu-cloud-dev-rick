@@ -47,6 +47,11 @@ async function handleSubmit(event) {
   }
 }
 
+function createNote(note) {
+  return API.post("notes", "/notes", {
+    body: note
+  });
+}
 
   return (
     <div className="NewNote">
