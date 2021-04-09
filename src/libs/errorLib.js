@@ -9,7 +9,7 @@ export function initSentry() {
 
   Sentry.init({
 dsn: "https://73ca651108374b23a51bf8bf2149fdbb@o568355.ingest.sentry.io/5713359",
-integrations: [new Integrations.BrowserTracing()],
+
 // Set tracesSampleRate to 1.0 to capture 100%
 // of transactions for performance monitoring.
 // We recommend adjusting this value in production
